@@ -20,4 +20,16 @@ public class ContactoDao {
 	public List<Contacto> buscar(String busqueda, Integer id){
 		return contactoMapper.buscar(busqueda, id);
 	}
+	
+	public Contacto traerPorId(Integer idUsuario, Integer idContacto) {
+		return contactoMapper.traerPorId(idUsuario, idContacto);
+	}
+	
+	public void actualizarContacto(Contacto contacto) {
+		contactoMapper.actualizarContacto(contacto);
+	}
+	
+	public void eliminarContacto(Integer idUsuario, Integer idContacto) {
+		contactoMapper.eliminarContacto(idUsuario, idContacto);
+	}
 }

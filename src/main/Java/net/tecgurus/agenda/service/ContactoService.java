@@ -19,4 +19,16 @@ public class ContactoService {
 	public List<Contacto> buscar(String busqueda, Integer id){
 		return contactoDao.buscar(busqueda, id);
 	}
+	
+	public Contacto traerPorId(Integer idUsuario, Integer idContacto) {
+		return contactoDao.traerPorId(idUsuario, idContacto);
+	}
+	
+	public void actualizarContacto(Contacto contacto) {
+		contactoDao.actualizarContacto(contacto);
+	}
+	
+	public void eliminarContacto(Integer idUsuario, Integer idContacto) {
+		contactoDao.eliminarContacto(idUsuario, idContacto);
+	}
 }
