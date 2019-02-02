@@ -46,5 +46,10 @@
 		<property name="mapperInterface" value = "net.tecgurus.agenda.mapper.ContactoMapper"/>
 		<property name="sqlSessionFactory" ref = "sqlSessionFactory"/>
 	</bean> 
+	
+	<bean id = "UsuarioMapper" class = "org.mybatis.spring.mapper.MapperFactoryBean">
+		<property name="mapperInterface" value = "net.tecgurus.agenda.mapper.UsuarioMapper"/>
+		<property name="sqlSessionFactory" ref = "sqlSessionFactory"/>
+	</bean> 
 
 </beans>

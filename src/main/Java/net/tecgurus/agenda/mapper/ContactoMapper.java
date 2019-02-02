@@ -20,7 +20,7 @@ public interface ContactoMapper {
 	
 	public List<Contacto> buscar(@Param("busqueda") String busqueda, @Param("id") int id);
 	
-	public Long buscarCount(@Param("busqueda") String busqueda, Integer id);
+	public Long buscarCount(@Param("busqueda") String busqueda, @Param("id") Integer id);
 	
 	@Select("SELECT * FROM contactos WHERE id_usuario = #{idUsuario} AND id = #{idContacto}")
 	public Contacto traerPorId(@Param("idUsuario") int idUsuario, @Param("idContacto") int idContacto);
