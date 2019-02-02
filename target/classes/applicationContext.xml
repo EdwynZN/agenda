@@ -13,7 +13,7 @@
 
 	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location">
-			<value>jdbc.properties</value>
+			<value>WEB-INF/jdbc.properties</value>
 		</property>
 	</bean>
 
@@ -35,12 +35,6 @@
 		<property name="dataSource" ref="dataSource" />
 		<property name="typeAliasesPackage" value="net.tecgurus.agenda.model" />
 	</bean>
-
-	<!-- Se crean los bean de las interfaces para nuestros mappers ->
-	<bean id="skillMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-		<property name="mapperInterface" value="net.tecgurus.mybatisspring.mappers.SkillMapper" />
-		<property name="sqlSessionFactory" ref="sqlSessionFactory" />
-	</bean>-->
 	
 	<bean id = "ContactoMapper" class = "org.mybatis.spring.mapper.MapperFactoryBean">
 		<property name="mapperInterface" value = "net.tecgurus.agenda.mapper.ContactoMapper"/>

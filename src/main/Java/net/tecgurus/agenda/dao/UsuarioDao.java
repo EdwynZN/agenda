@@ -17,7 +17,7 @@ public class UsuarioDao {
 	}
 	
 	public Usuario iniciarSesion(String cuenta,String password) {
-		return null;
+		return usuarioMapper.iniciarSesion(cuenta, password);
 	}
 
 	public void actualizarUsuario(Usuario usuario, String password) {

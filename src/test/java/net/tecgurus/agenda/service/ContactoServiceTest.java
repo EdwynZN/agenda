@@ -12,7 +12,7 @@ import net.tecgurus.agenda.model.Contacto;
 @ContextConfiguration(locations = {"file:src/main/resources/applicationContext.xml"})
 public class ContactoServiceTest {
 	@Autowired
-	ContactoService contactoService;
+	private ContactoService contactoService;
 	
 	private int idUsuario = 1;
 	private int idContacto = 2;
@@ -26,7 +26,12 @@ public class ContactoServiceTest {
 	
 	@Test
 	public void buscarTest() {
-		contactoService.buscar(null, 1).forEach(System.out::println);
+		//contactoService.buscar(null, 1).forEach(System.out::println);
+	}
+	
+	@Test
+	public void buscarCountTest(){
+		System.out.println(contactoService.buscarCount(null, 1));
 	}
 	
 	@Test

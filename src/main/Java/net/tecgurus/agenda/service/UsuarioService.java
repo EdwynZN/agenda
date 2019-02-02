@@ -16,7 +16,7 @@ public class UsuarioService {
 	}
 	
 	public Usuario iniciarSesion(String cuenta,String password) {
-		return null;
+		return usuarioDao.iniciarSesion(cuenta, password);
 	}
 
 	public void actualizarUsuario(Usuario usuario, String password) {

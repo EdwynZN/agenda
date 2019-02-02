@@ -12,4 +12,12 @@
 		</if>
 	</select>
 	
+	<select id="buscarCount" parameterType='String' resultType='Long'>
+		SELECT count(*) FROM contactos WHERE id_usuario = #{id}
+		<if test="busqueda != null">
+			<bind name="buscarCorregido" value="'%' + busqueda + '%'"/>
+			AND nombre LIKE #{buscarCorregido} OR apellido LIKE #{buscarCorregido}
+		</if>
+	</select>
+	
 </mapper>

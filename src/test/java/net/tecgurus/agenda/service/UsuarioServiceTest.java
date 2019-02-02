@@ -23,6 +23,9 @@ public class UsuarioServiceTest {
 	
 	@Test
 	public void iniciarSesionTest() {
+		Usuario usuario = usuarioService.iniciarSesion("eTest", "12345");
+		if(usuario != null) System.out.println("Bienvenido " + usuario.getEmail());
+		else System.out.println("Cuenta o contraseña incorrecta");
 	}
 
 	@Test
