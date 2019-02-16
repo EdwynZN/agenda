@@ -1,6 +1,6 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 
-<!--Barra de navegasiÛn-->
+<!--Barra de navegasi√≥n-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -12,7 +12,7 @@
                 <a class="nav-link" href="#">Perfil </a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Cont·ctos</a>
+                <a class="nav-link" href="#">Cont√°ctos</a>
             </li>
         </ul>
         <div class="my-2 my-lg-0">

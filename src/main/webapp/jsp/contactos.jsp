@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,12 +14,12 @@
 </head>
 
 <body>
-	<!--Barra de navegasión-->
+	<!--Barra de navegasiÃ³n-->
 	<%@ include file="componentes/header.jsp"%>
 
 	  <!--Mensaje de alerta-->
     <div class="alert alert-info alert-dismissible fade show" role="alert">
-        <p class="text-center"><strong>Bienvenido!</strong> Ahora puedes ver todos tus contactos en esta sección y hacer búsquedas para que accedas más rapido a ellos.</p>
+        <p class="text-center"><strong>Bienvenido!</strong> Ahora puedes ver todos tus contactos en esta secciÃ³n y hacer bÃºsquedas para que accedas mÃ¡s rapido a ellos.</p>
     
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -54,12 +54,12 @@
         <div class="row justify-content-between mx-3">
             <div class="col">
                 <div id="grid-contactos" class="contacts-container">
-                    <!-- Las card de los contactos se generan de forma dinámica con JQuery-->
+                    <!-- Las card de los contactos se generan de forma dinÃ¡mica con JQuery-->
                 </div>
             </div>
         </div>
 
-        <!--Paginación-->
+        <!--PaginaciÃ³n-->
         <div class="row fixed-bottom no-gutters justify-content-center" style="margin-bottom: 75px;">
             <div class="col-auto align-self-center">
                 <nav class="col-auto align-self-center" aria-label="Page navigation example">

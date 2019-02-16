@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %> <!-- Se agrega la libreria de JSTL -->
 
 <form id="formUserInput">
@@ -42,13 +42,13 @@
 	                    </div>
 	                </div>
 	                <div class="form-group">
-	                    <label for="direccion">Dirección</label>
+	                    <label for="direccion">DirecciÃ³n</label>
 	                    <input type="text" class="form-control" placeholder="5 de Mayo #515, Col. Analco..." name="direccion" id="direccion">
 	                </div>
 	                <div class="form-row">
 	                    <div class="form-group col-sm-6">
-	                        <label for="telefono">Teléfono</label>
-	                        <input type="text" class="form-control" placeholder="Teléfono" name="telefono" id="telefono">
+	                        <label for="telefono">TelÃ©fono</label>
+	                        <input type="text" class="form-control" placeholder="TelÃ©fono" name="telefono" id="telefono">
 	                    </div>
 	                    <div class="form-group col-sm-6">
 	                        <label for="email">Email</label>
@@ -57,7 +57,7 @@
 	                </div>
 	                <div class="form-row">
 	                    <div class="form-group col-12">
-	                        <label for="cumple">Cumpleaños</label>
+	                        <label for="cumple">CumpleaÃ±os</label>
 	                        <input type="date" class="form-control" name="cumple" id="cumple">                            
 	                    </div>
 	                </div>
