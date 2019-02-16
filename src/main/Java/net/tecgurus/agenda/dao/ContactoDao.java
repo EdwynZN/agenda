@@ -27,7 +27,8 @@ public class ContactoDao {
 	public List<Contacto> buscar(String busqueda, Integer idUsuario, Integer offset, Integer limit){
 		SqlSession sqlSession = sqlSessionFactory.openSession();
 		
-		Map<String, Object> parametros = new HashMap<>();
+		System.out.println("DAO: "+  busqueda);
+		Map<String, Object> parametros = new HashMap<String, Object>();
 		parametros.put("busqueda", busqueda);
 		parametros.put("idUsuario", idUsuario);
 		

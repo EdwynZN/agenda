@@ -22,7 +22,7 @@ import net.tecgurus.agenda.service.ContactoService;
 /**
  * Servlet implementation class ContactosControladores
  */
-@WebServlet("/ContactosControladores")
+@WebServlet("/ContactoController")
 public class ContactosControladores extends HttpServlet {
 	private static final long serialVersionUID = 1L;
      
@@ -47,9 +47,13 @@ public class ContactosControladores extends HttpServlet {
 					Integer limite = Integer.valueOf(request.getParameter("limite"));
 					Integer pagina = Integer.valueOf(request.getParameter("pagina"));
 					String busqueda = request.getParameter("busqueda");
+					System.out.println("controlador: busqueda: " + busqueda);
 					
 					Map<String, Object> respuesta = contactoService.buscar(busqueda, idUsuario, 
 																			pagina, limite);
+					
+					System.out.println("respuesta: " + new Gson().toJson(respuesta));
+					
 					response.setContentType("application/json");
 					response.setCharacterEncoding("utf-8");
 					response.getWriter().write(new Gson().toJson(respuesta));

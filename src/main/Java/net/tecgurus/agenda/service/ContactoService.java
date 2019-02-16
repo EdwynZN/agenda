@@ -26,7 +26,7 @@ public class ContactoService {
 		if(totalPaginas%1 != 0) totalPaginas++;
 		Map<String, Object> respuesta = new HashMap<>();
 		respuesta.put("paginas", (int) totalPaginas);
-		respuesta.put("contacto", contactoDao.buscar(busqueda, id, offset, limite));
+		respuesta.put("contactos", contactoDao.buscar(busqueda, id, offset, limite));
 		
 		return respuesta;
 	}
