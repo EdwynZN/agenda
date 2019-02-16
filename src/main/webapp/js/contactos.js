@@ -1,7 +1,7 @@
 $(function(){
 	$(document).ready(function(){
 		
-		//buscar("buscar", 1, 8, 1, "");
+		buscar("buscar", 1, 8, 1, "");
 		
 		//Asignar funcionalidad al boton agregar contacto
 		$('body').on("click","#btnAgregar", function(e){
